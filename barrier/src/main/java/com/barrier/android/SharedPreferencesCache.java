@@ -11,6 +11,9 @@ import com.google.gson.Gson;
 
 import org.joda.time.DateTime;
 
+/**
+ * Implementation of a cache using SharedPreferences to store data or entries.
+ */
 public class SharedPreferencesCache implements Cache {
 
     private static final String DEFAULT_VALUE = "{}";
@@ -85,6 +88,12 @@ public class SharedPreferencesCache implements Cache {
         editor.commit();
     }
 
+    /**
+     * It checks if the given entry exists in SharedPreferences.
+     *
+     * @param key Key or name to be checked.
+     * @return True if the given key or name exists in the SharedPreferences.
+     */
     private boolean contains(String key) {
         return mContext.getSharedPreferences(mCacheName, Context.MODE_PRIVATE).contains(key);
     }
