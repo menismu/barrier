@@ -1,6 +1,6 @@
 {
   "package": {
-    "name": "barrier",
+    "name": "com.barrier.android",
     "repo": "barrier",
     "subject": "menismu",
     "desc": "Barrier. A lightweight API and offline cache for Android. ",
