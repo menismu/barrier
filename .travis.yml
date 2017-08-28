@@ -1,24 +1,15 @@
 language: android
 android:
   components:
-    # Uncomment the lines below if you want to
-    # use the latest revision of Android SDK Tools
-    - tools
-    - platform-tools
-
-    # The BuildTools version used by your project
-    - build-tools-25.0.0
-
-    # The SDK version used to compile your project
-    - android-23
-
-    # Additional components
-    # - extra-google-google_play_services
-    - extra-google-m2repository
-    - extra-android-m2repository
-    # - addon-google_apis-google-19
-
-    # Specify at least one system image,
-    # if you need to run emulator(s) during your tests
-    #- sys-img-armeabi-v7a-android-22
-    #- sys-img-armeabi-v7a-android-17
+  - tools
+  - platform-tools
+  - build-tools-25.0.0
+  - android-23
+  - extra-google-m2repository
+  - extra-android-m2repository
+deploy:
+  provider: bintray
+  file: descriptor.json
+  user: menismu
+  key:
+    secure: hYFAM2EfTIlWzwDPDy3GqtO8VkUBdbXVm8xSnGGtu8Qt/Kur2N3JS65wiHuFTH75preGcTH05g/a3OTrXXaJ8xkDBG09ft/Q12WPVhQQco1v9FPIDM/qyLnYLgl+MZqHh31zbFVfgieUoVjmgeo/4+zatUg5cyyOZjiAZ75Szb3+LwA62CHpM9+GcoLQ/SsBFT9lW+cnQGMc7qYv6U9fpxAyzfeKgDVvg/Z3NV7UGOKGQVRoHR8vhcTjR0429SXFphDiMOV1SDMh125WwU7x+Jskj8ow2RuU7ereE0GqGlETtyqVU4GXquObaM78TbsWbwfa6hzU+GR6V6+7M7M2oy2Bw0ZbgpLlrQnrBKE4EfUcCakjLsSu0UbAPtK6ujpx6MP8mqcRU6wlRkoXzLGT0C/33Aw9HSHhy7wnnxLoymgUOavY71NSvNCvw8pMA6acvXDRElNErcYbWRA7leu8bBmA/k/VzMtxSNezoIYkbF/7l/HM6thQeczMxa3Fgoq2EH74f18PsDfPqm86ULfvIc1ZO1ePyzZnvit7eYueEB2JIOOqLVq1ByDJRqk9OXSpWALz3Nt2i0vPXOn+B1oD++Hm6zUAcCX7m7L5Xc8Ga0DuftQGni1HYsi2fhVGSg7BZcmVIAbIj75jmGDqRNfkZJ21vpLoJNHRFeEcl7pzpCQ=
