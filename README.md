@@ -1,4 +1,5 @@
-# Barrier. A lightweight API and offline cache for Android.
+# Barrier. A lightweight API and offline cache for Android. [![Build Status](https://travis-ci.org/menismu/barrier.svg?branch=master)](https://travis-ci.org/menismu/barrier)
+
 
 ### 1. Overview
 
