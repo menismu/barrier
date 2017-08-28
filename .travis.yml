@@ -16,4 +16,4 @@ deploy:
 before_install:
   - pwd
   - ls barrier/src
-  - ls gradle
+  - ls ../
